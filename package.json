@@ -1,0 +1,16 @@
+{
+  "name": "rn-ol",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.9",
+    "vite-plugin-singlefile": "^2.0.2"
+  },
+  "dependencies": {
+    "ol": "latest"
+  }
+}

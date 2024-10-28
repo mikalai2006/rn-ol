@@ -1,0 +1,52 @@
+@import "node_modules/ol/ol.css";
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#crossElement {
+  position: absolute;
+  z-index: 999999;
+  display: block;
+  font-size: 50px;
+  display: none;
+}
+#crossElement {
+  pointer-events: none;
+}
+
+:root.dark,
+:host.dark {
+  --ol-background-color: #252527;
+  --ol-accent-background-color: #f5f5f5;
+  --ol-subtle-background-color: rgba(128, 128, 128, 0.25);
+  --ol-partial-background-color: rgba(255, 255, 255, 0.75);
+  --ol-foreground-color: #666666;
+  --ol-subtle-foreground-color: #666666;
+  --ol-brand-color: #00aaff;
+}
+
+.dark .ol_bw,
+.dark #map .leaflet-layer,
+.dark #map .leaflet-control-zoom-in,
+.dark #map .leaflet-control-zoom-out,
+.dark #map .leaflet-control-attribution,
+.dark .streets .leaflet-layer,
+.dark .streets .leaflet-control-zoom-in,
+.dark .streets .leaflet-control-zoom-out,
+.dark .streets .leaflet-control-attribution,
+.dark .terrain .leaflet-layer,
+.dark .terrain .leaflet-control-zoom-in,
+.dark .terrain .leaflet-control-zoom-out,
+.dark .terrain .leaflet-control-attribution {
+  filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3)
+    brightness(0.7);
+}
